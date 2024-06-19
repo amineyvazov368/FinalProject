@@ -1,0 +1,40 @@
+.start{
+    padding-top: 60px;
+    padding-bottom: 60px;
+   
+    background-color: rgb(17, 17, 17);
+    color: aliceblue;
+}
+.first h4{
+    font-weight: 700;
+}
+ul li{
+    font-weight: 600;
+    list-style: none;
+    margin-left: -30px;
+}
+.one p{
+    font-weight: 500;
+}
+.icons button{
+    padding: 4px 9px;
+    border: 1px solid ;
+    border-radius: 50%;
+    margin-left: 9px;
+    background-color: rgb(230, 174, 106);
+}
+.icon span{
+    margin: 3px;
+}
+.heart{
+    color: red;
+}
+.finish{
+    background-color: black;
+}
+.end{
+  
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 35px;
+}

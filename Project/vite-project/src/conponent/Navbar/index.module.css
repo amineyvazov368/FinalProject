@@ -17,8 +17,10 @@
     color: aliceblue;
     font-size: medium;
 }
-
+.logo{
+    margin-top: 4px;
+}
 .button{
-    margin: 15px;
+    margin: 10px;
     
 }
