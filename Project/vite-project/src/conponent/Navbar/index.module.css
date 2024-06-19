@@ -1,0 +1,24 @@
+.nav{
+    background-color: black;
+
+}
+
+
+.container{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+}
+.button link {
+    text-decoration: none;
+    list-style: none;
+    color: aliceblue;
+    font-size: medium;
+}
+
+.button{
+    margin: 15px;
+    
+}

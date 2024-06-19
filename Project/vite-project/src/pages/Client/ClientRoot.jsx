@@ -1,8 +1,14 @@
 import React from 'react'
-
+import {Outlet} from "react-router-dom"
+import Navbar from "../../conponent/Navbar"
+import Footer from "../../conponent/Footer"
 const ClientRoot = () => {
   return (
-    <div>ClientRoot</div>
+    <>
+     <Navbar/>
+    <Outlet/>
+    <Footer/>
+    </>
   )
 }
 
