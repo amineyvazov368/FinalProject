@@ -1,4 +1,4 @@
-.intro{
+.intro {
     padding-top: 170px;
     padding-bottom: 170px;
     background-position: center;
@@ -6,25 +6,240 @@
     margin-right: -1000px;
     background-image: url(https://preview.colorlib.com/theme/barbero/images/bg_2.jpg);
 }
-.info{
+
+.info {
     color: aliceblue;
 }
-.info h5{
-color: burlywood;
+
+.info h5 {
+    color: burlywood;
 }
-.info h1{
+
+.info h1 {
     font-size: 51px;
     font-weight: 700;
 }
-.introParag{
+
+.introParag {
     margin-left: 150px;
 }
-.introParag button{
-padding: 7px 12px;
-border: 2px solid rgb(238, 189, 125);
-color: rgb(233, 185, 122);
-background-color: transparent;
+
+.introParag button {
+    padding: 7px 12px;
+    border: 2px solid rgb(238, 189, 125);
+    color: rgb(233, 185, 122);
+    background-color: transparent;
 }
-.introParag p{
+
+.introParag p {
     font-size: larger;
+}
+
+.aboutInfo {
+    margin-left: 35px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 20px;
+}
+
+.aboutInfo h5 {
+    color: rgb(219, 167, 98);
+}
+
+.aboutInfo h1 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.aboutInfo p {
+    color: rgb(43, 68, 70);
+}
+
+.aboutImg {
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/about-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.video {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/bg_3.jpg);
+}
+
+.videoTitle {
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+}
+
+.videoTitle h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.videoTitle span {
+    font-size: 85px;
+    color: red;
+}
+
+.gallery {
+    padding-top: 80px;
+}
+
+.galleryTitle {
+    margin: auto;
+    text-align: center;
+}
+
+.galleryTitle h1 {
+    font-weight: 700;
+}
+
+.galleryTitle h5 {
+    color: burlywood;
+    font-weight: 600;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.galleryIcon {
+
+    border-radius: 50%;
+    padding: 8px 15px;
+    font-size: 30px;
+    background-color: rgb(179, 136, 81);
+
+}
+
+.border {
+    background-color: rgba(255, 228, 196, 0.301);
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: none;
+}
+
+.img1:hover .border {
+    display: block;
+}
+
+.img2:hover .border {
+    display: block;
+}
+
+.img3:hover .border {
+    display: block;
+}
+
+.img4:hover .border {
+    display: block;
+}
+
+.img5:hover .border {
+    display: block;
+}
+
+.img6:hover .border {
+    display: block;
+}
+
+.img7:hover .border {
+    display: block;
+}
+.img8:hover .border {
+    display: block;
+}
+.img1 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-1.jpg);
+}
+
+.img2 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-2.jpg);
+}
+
+.img3 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-3.jpg);
+}
+
+.img4 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-4.jpg);
+}
+
+.img5 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-5.jpg);
+}
+
+.img6 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-6.jpg);
+}
+
+.img7 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-7.jpg);
+}
+
+.img8 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-8.jpg);
+}
+
+.appointment {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/bg_3.jpg);
+}
+
+.appointment h2 {
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.input {
+    margin-top: 20px;
+    gap: 15px;
+}
+
+input {
+    padding: 10px 5px;
+    border-radius: 7px;
+    margin-left: 2px;
+}
+
+.input button {
+    padding: 10px 5px;
+    border-radius: 7px;
+    margin-left: 5px;
 }
