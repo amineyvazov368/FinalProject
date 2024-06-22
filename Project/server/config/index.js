@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config();
-const PORT = process.env.PORT || 5050;
+const PORT =  5050;
 const express = require("express");
 const app = express();
 
@@ -13,7 +13,7 @@ app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 mongoose
   .connect(
-    process.env.CONNECTION_STRING.replace("<password>", process.env.DB_PASSWORD)
+   "mongodb+srv://amineyvazov:aminamin@project2.ws3s31d.mongodb.net/?retryWrites=true&w=majority&appName=project2"
   )
   .then(() => console.log("Connected!"))
   .catch((err) => {
