@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { MdOutlineSlowMotionVideo } from "react-icons/md"
 import { FaSearch } from "react-icons/fa";
-
+import Cuts from "../../../conponent/Cuts"
 const index = () => {
   return (
     <>
@@ -28,6 +28,9 @@ const index = () => {
             </Col>
           </Row>
         </Container>
+      </section>
+      <section className={Style.cuts}>
+          <Cuts/>
       </section>
 
       <section className={Style.about}>

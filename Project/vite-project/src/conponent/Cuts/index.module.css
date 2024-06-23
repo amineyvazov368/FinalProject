@@ -1,0 +1,30 @@
+.cards{
+padding-bottom: 15px;
+background-color: burlywood;
+column-gap: 0px;
+
+}
+.card{
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px #f8f6f6;
+ 
+  color:rgb(56, 55, 54);
+  background-color: rgb(221, 176, 116);
+  
+}
+.cardImg{
+   
+    height: 220px;
+    padding: 10px 30px;
+  margin-top: -110px;
+}
+.cardImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+   
+}
+.cardInfo{
+    text-align: center;
+    margin-top: 30px;
+}
