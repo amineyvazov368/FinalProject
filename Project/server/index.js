@@ -12,5 +12,7 @@ app.use(cors());
 
 app.use(router.blog);
 app.use(router.user);
-app.use(router.cuts)
+app.use(router.cuts);
+app.use(router.teams);
+app.use(router.prices)
 
