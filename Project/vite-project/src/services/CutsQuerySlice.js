@@ -1,8 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-const BASE_URL = "http://localhost:5050/api";
+const BASE_URL = "http://localhost:5050/api/";
 
 export const CutsAPI = createApi({
-  reducerPath: 'CutsApi',
+  reducerPath: 'CutsAPI',
   baseQuery: fetchBaseQuery({ baseUrl: BASE_URL  }),
   endpoints: (builder) => ({
     getCuts:builder.query({

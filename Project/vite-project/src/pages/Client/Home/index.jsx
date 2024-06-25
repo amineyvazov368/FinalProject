@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import { MdOutlineSlowMotionVideo } from "react-icons/md"
 import { FaSearch } from "react-icons/fa";
 import Cuts from "../../../conponent/Cuts"
+import Prices from "../../../conponent/Prices"
 const index = () => {
   return (
     <>
@@ -44,6 +45,21 @@ const index = () => {
               <h1>A SMOOTH BARBER EXPERIENCE IN YOUR TOWN</h1> <br />
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> <br />
               <button>year sdkbdshkdsh dfjbdf</button>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section className={Style.team}>
+        <Container>
+          <Row>
+            <Col lg={5}>
+            <h5>TEAM</h5>
+            <h1>OUR EXPERT TEAM</h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={12}>
+              
             </Col>
           </Row>
         </Container>
@@ -97,6 +113,17 @@ const index = () => {
             </Col>
           </Row>
         </div>
+      </section>
+      <section className={Style.price}>
+        <Container>
+          <Row>
+            <Col className={Style.priceTitle} lg={5}>
+            <h5>PRICING</h5>
+            <h1>PRICE & PLANS</h1>
+            </Col>
+          </Row>
+          <Prices></Prices>
+        </Container>
       </section>
       <section className={Style.appointment}>
         <Container>

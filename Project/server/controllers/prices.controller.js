@@ -1,4 +1,4 @@
-const PricesModel = require("../models/cuts.model");
+const PricesModel = require("../models/prices.model");
 
 const prices_controller = {
     getAll: async (req, res) => {

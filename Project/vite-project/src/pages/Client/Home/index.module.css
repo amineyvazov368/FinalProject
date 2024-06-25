@@ -212,6 +212,21 @@
     background-size: cover;
     background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-8.jpg);
 }
+.price{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.priceTitle{
+    margin:10px auto;
+    text-align: center;
+}
+.priceTitle h5{
+    color: rgb(236, 180, 107);
+}
+.priceTitle h1{
+    font-weight: 700;
+    font-size: 47px;
+}
 
 .appointment {
     padding-top: 70px;

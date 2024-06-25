@@ -17,14 +17,18 @@ const index = () => {
                     <Col lg={4}>
                         <div className={Style.box}>
                             <div className={Style.boxImg}>
-                                <img src="" alt="" />
+                                <img src={price.src} alt="" />
                             </div>
                             <div className={Style.boxInfo}>
                                 <ul>
-                                    <li></li>
+                                    <li>{price.services}</li>
                                 </ul>
-                                <h4></h4>
+                               
                             </div>
+                            <div className={Style.number}>
+                                 <h4>{price.price}$</h4>
+                             <button><b>GET STARTED</b></button>
+                             </div>
                         </div>
 
                     </Col>
