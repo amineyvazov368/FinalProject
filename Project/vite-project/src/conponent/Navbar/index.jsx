@@ -21,7 +21,6 @@ const index = () => {
                         <Button><Link className={Style.link} to={"/register"}>Register</Link></Button>
                         <Button><Link className={Style.link} to={"/pricing"}>Pricing</Link></Button>
                         <Button><Link className={Style.link} to={"/team"}>Team</Link></Button>
-                        
                     </div>
                 </div>
             </div>

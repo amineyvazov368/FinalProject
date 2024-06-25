@@ -1,0 +1,171 @@
+.intro{
+    color: aliceblue;
+    padding-bottom: 50px;
+    padding-top: 450px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/bg_1.jpg);
+}
+.intro h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.appointment {
+    padding-top: 70px;
+    margin-top: 60px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/bg_3.jpg);
+}
+
+.appointment h2 {
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.input {
+    margin-top: 20px;
+    gap: 15px;
+}
+
+input {
+    padding: 10px 5px;
+    border-radius: 7px;
+    margin-left: 2px;
+}
+
+.input button {
+    padding: 10px 5px;
+    border-radius: 7px;
+    margin-left: 5px;
+}
+.gallery {
+    padding-top: 80px;
+}
+
+.galleryTitle {
+    margin: auto;
+    text-align: center;
+}
+
+.galleryTitle h1 {
+    font-weight: 700;
+}
+
+.galleryTitle h5 {
+    color: burlywood;
+    font-weight: 600;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.galleryIcon {
+
+    border-radius: 50%;
+    padding: 8px 15px;
+    font-size: 30px;
+    background-color: rgb(179, 136, 81);
+
+}
+
+.border {
+    background-color: rgba(255, 228, 196, 0.301);
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: none;
+}
+
+.img1:hover .border {
+    display: block;
+}
+
+.img2:hover .border {
+    display: block;
+}
+
+.img3:hover .border {
+    display: block;
+}
+
+.img4:hover .border {
+    display: block;
+}
+
+.img5:hover .border {
+    display: block;
+}
+
+.img6:hover .border {
+    display: block;
+}
+
+.img7:hover .border {
+    display: block;
+}
+.img8:hover .border {
+    display: block;
+}
+.img1 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-1.jpg);
+}
+
+.img2 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-2.jpg);
+}
+
+.img3 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-3.jpg);
+}
+
+.img4 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-4.jpg);
+}
+
+.img5 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-5.jpg);
+}
+
+.img6 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-6.jpg);
+}
+
+.img7 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-7.jpg);
+}
+
+.img8 {
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/gallery-8.jpg);
+}
