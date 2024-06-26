@@ -28,15 +28,15 @@ export const ROUTES = [
                 element:<Dashboard/>
             },
             {
-                path:"blog",
+                path:"AdminBlog",
                 element:<AdminBlog/>
             },
             {
-                path:"team",
+                path:"AdminTeam",
                 element:<AdminTeam/>
             },
             {
-                path:"login",
+                path:"AdminLogin",
                 element:<AdminLogin/>
             }
         ]

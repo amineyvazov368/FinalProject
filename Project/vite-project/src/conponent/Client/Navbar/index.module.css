@@ -1,0 +1,26 @@
+.nav{
+    background-color: rgba(48, 46, 46, 0.925);
+
+}
+
+
+.container{
+    width: 80%;
+    margin:  auto;
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+}
+.button link {
+    text-decoration: none;
+    list-style: none;
+    color: aliceblue;
+    font-size: medium;
+}
+.logo{
+    margin-top: 4px;
+}
+.button{
+    margin: 10px;
+    
+}

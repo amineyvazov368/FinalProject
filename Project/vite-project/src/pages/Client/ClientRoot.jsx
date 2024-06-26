@@ -1,6 +1,6 @@
 import React from 'react'
 import {Outlet} from "react-router-dom"
-import Navbar from "../../conponent/Navbar"
+import Navbar from "../../conponent/Client/Navbar"
 import Footer from "../../conponent/Footer"
 const ClientRoot = () => {
   return (

@@ -1,8 +1,16 @@
 import React from 'react'
-
+import {Outlet} from "react-router-dom"
+import Navbar from "../../conponent/Admin/Navbar"
+import Footer from "../../conponent/Footer"
 const AdminRoot = () => {
   return (
-    <div>AdminRoot</div>
+   <>
+   <Navbar/>
+   <Outlet/>
+   <Footer/>
+   
+   
+   </>
   )
 }
 
