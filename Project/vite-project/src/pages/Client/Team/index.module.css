@@ -1,0 +1,58 @@
+.intro{
+    color: aliceblue;
+    padding-bottom: 50px;
+    padding-top: 450px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/bg_1.jpg);
+}
+.intro h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.team{
+    padding-top: 50px;
+    padding-bottom: 90px;
+    background-color: black;
+    color: aliceblue;
+}
+.teamTitle{
+    margin: 10px auto;
+    text-align: center;
+}
+.teamTitle h5{
+    color: rgb(212, 164, 100);
+}
+.teamTitle h1{
+    font-weight: 700;
+}
+.appointment {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/bg_3.jpg);
+}
+
+.appointment h2 {
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.input {
+    margin-top: 20px;
+    gap: 15px;
+}
+
+input {
+    padding: 10px 5px;
+    border-radius: 7px;
+    margin-left: 2px;
+}
+
+.input button {
+    padding: 10px 5px;
+    border-radius: 7px;
+    margin-left: 5px;
+}

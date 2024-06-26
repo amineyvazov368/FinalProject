@@ -15,8 +15,8 @@ const index = () => {
         <Container>
           <Row>
             <Col lg={3}>
-            <h4>Home <b><GoChevronRight /></b> About Us <b><GoChevronRight /></b> </h4>
-            <h1>ABOUT US</h1>
+            <h4>Home <b><GoChevronRight /></b> Pricing <b><GoChevronRight /></b> </h4>
+            <h1>Pricing</h1>
             </Col>
              
           </Row>

@@ -23,24 +23,24 @@ const index = () => {
     
   return (
    <>
-   <Slider {...settings}>
+   <Slider {...settings} className={Style.slider}>
    {teams && teams.teams.map((team)=>{
             return(
               
-                <Col lg= {12}>
+                <Col lg= {12} className={Style.border}>
                         <Row>
                             <Col lg={3} className={Style.img}>
                             <img src={team.src} alt="" />
                             </Col>
                             <Col lg={5}>
-                                <h2>{team.title}</h2>
+                                <h2>{team.title}</h2> <br />
                                 <p>{team.description}</p>
                                 <div className={Style.icons}>
                                         <button><span><FaTwitter /></span></button>
                                         <button><span><FaFacebook /></span></button>
                                         <button><span><FaInstagram /></span></button>
                                     </div>
-                                    <button><b>MAKE SCHEDULE</b></button>
+                                    <button className={Style.button}><b>MAKE SCHEDULE</b></button>
                             </Col>
                             <Col lg={3}>
                                 <h3>LIST OF SERVICES</h3>
