@@ -60,7 +60,22 @@
     background-position: center;
     background-size: cover;
 }
-
+.team{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+    color: aliceblue;
+}
+.teamTitle{
+    margin: 10px auto;
+    text-align: center;
+}
+.teamTitle h5{
+    color: rgb(212, 164, 100);
+}
+.teamTitle h1{
+    font-weight: 700;
+}
 .video {
     padding-top: 130px;
     padding-bottom: 130px;

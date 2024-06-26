@@ -7,6 +7,7 @@ import { MdOutlineSlowMotionVideo } from "react-icons/md"
 import { FaSearch } from "react-icons/fa";
 import Cuts from "../../../conponent/Cuts"
 import Prices from "../../../conponent/Prices"
+import Slider from "../../../conponent/Slider"
 const index = () => {
   return (
     <>
@@ -52,15 +53,14 @@ const index = () => {
       <section className={Style.team}>
         <Container>
           <Row>
-            <Col lg={5}>
+            <Col className={Style.teamTitle} lg={5}>
             <h5>TEAM</h5>
             <h1>OUR EXPERT TEAM</h1>
             </Col>
           </Row>
           <Row>
-            <Col lg={12}>
-              
-            </Col>
+            
+              <Slider/>
           </Row>
         </Container>
       </section>
