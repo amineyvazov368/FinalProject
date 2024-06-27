@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+input{
+    width: 99%;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+form{
+    background-color: burlywood;
+    margin-bottom: 35px;
+    width: 50%;
+    padding: 20px;
+    margin: 10px auto;
+    border: 2px solid rgb(110, 69, 15);
+}button{
+    padding: 6px 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -100px;
+}
