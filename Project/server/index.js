@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 app.use(router.blog);
-app.use(router.user);
+app.use('/api/users',router.user);
 app.use(router.cuts);
 app.use(router.teams);
 app.use(router.prices)
