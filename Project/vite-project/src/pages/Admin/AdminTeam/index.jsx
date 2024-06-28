@@ -98,8 +98,8 @@ const index = () => {
   /> <br />
   <h1>Add Teams</h1>
 
-     <form onSubmit={formik.handleSubmit}>
-       <input
+     <form className={Style.form} onSubmit={formik.handleSubmit}>
+       <input className={Style.fromInput}
          id="src"
          name="src"
          type="url"
@@ -112,7 +112,7 @@ const index = () => {
          <div>{formik.errors.src}</div>
        ) : null}
  <br /> <br />
-       <input
+       <input className={Style.fromInput}
          id="title"
          name="title"
          type="text"
@@ -125,7 +125,7 @@ const index = () => {
          <div>{formik.errors.title}</div>
        ) : null}
  <br /> <br />
-       <input
+       <input className={Style.fromInput}
          id="description"
          name="description"
          type="text"
