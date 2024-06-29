@@ -1,13 +1,13 @@
 import React from 'react'
 import {Outlet} from "react-router-dom"
 import Navbar from "../../conponent/Admin/Navbar"
-import Footer from "../../conponent/Footer"
+import AdminHeader from "../../conponent/Admin/Navbar/AdminHeader"
 const AdminRoot = () => {
   return (
    <>
-   <Navbar/>
+  <AdminHeader/>
    <Outlet/>
-   <Footer/>
+  
    
    
    </>

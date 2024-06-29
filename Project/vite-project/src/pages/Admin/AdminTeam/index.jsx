@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Style from "./index.module.css"
 import { Table } from 'antd';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { useState } from 'react';
 import { useGetTeamsQuery, useDeleteTeamsMutation} from "../../../services/TeamsQuerySlice"
+import AdminPanelTable from '../../../conponent/Admin/common/AdminPanelTable';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 const columns = [
   {
     title: 'Name',
@@ -56,31 +58,47 @@ const data = [
 ];
 
 
+
+
+
+// let [teams,setTeams]=useState(null)
+
+
 const index = () => {
-  const formik = useFormik({
-    initialValues: {
-      src: '',
-      title: '',
-      description: '',
-    },
-    validationSchema: Yup.object({
-      src: Yup.string()
-        .required('Required'),
-        title: Yup.string()
-        .max(20, 'Must be 20 characters or less')
-        .required('Required'),
-        description: Yup.string().required('Required'),
-    }),
-    onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
-    },
-  });
+  
+  const [teamss,setTeamss]=useState([])
+
+  useEffect(()=>{
+      
+    axios.get("http://localhost:5050/api/teams").then(res=>{
+      console.log(res)
+      setTeamss(res.data.teams)
+     //  setTeams(res.data)
+     }).catch(e=>{
+       console.log(e)
+     })
+  },[])
+  
+  let rows=[]
+   const columns1=[
+      { id: "id", label: "Id", minWidth: 20,maxWidth:200 },
+      { id: "title", label: "Title", minWidth: 20,maxWidth:200 },
+      { id: "description", label: "description", minWidth: 20,maxWidth:200 },
+      { id: "buttons", label: "Actions", minWidth: 20,maxWidth:200 },
+    ]
+  
+  console.log(teamss)
+    teamss.map((x,i)=>{
+      rows.push({id:i,title:x.title,description:x.description,buttons:{update:`/admin/adminTeam/update/${x._id}`,delete:`/admin/adminTeam/delete/${x._id}`}})
+    })
+  
+
   const { data: teams, error, isLoading, refetch, } = useGetTeamsQuery();
   const [deleteOne, { isError, isSuccess }] = useDeleteTeamsMutation();
   return (
     <>
     <h1>Teams</h1> <br />
-   <Table
+   {/* <Table
     columns={columns}
     expandable={{
       expandedRowRender: (record) => (
@@ -95,52 +113,22 @@ const index = () => {
       rowExpandable: (record) => record.name !== 'Not Expandable',
     }}
     dataSource={data}
-  /> <br />
-  <h1>Add Teams</h1>
+  /> <br /> */}
+ <div className='Brands adminList'>
+    <div className="listInfo">
+    <h2>Teams</h2>
+    <div className="add">
+        <Link className='btn btn-success' to={"create"}>Create</Link>
+    </div>
+    </div>
+    <ul className='list'>
+        <AdminPanelTable Rows={rows} Columns={columns1} />
+    </ul>
+ 
+</div>
 
-     <form className={Style.form} onSubmit={formik.handleSubmit}>
-       <input className={Style.fromInput}
-         id="src"
-         name="src"
-         type="url"
-         placeholder='Src'
-         onChange={formik.handleChange}
-         onBlur={formik.handleBlur}
-         value={formik.values.src}
-       />
-       {formik.touched.src && formik.errors.src ? (
-         <div>{formik.errors.src}</div>
-       ) : null}
- <br /> <br />
-       <input className={Style.fromInput}
-         id="title"
-         name="title"
-         type="text"
-         placeholder='Title'
-         onChange={formik.handleChange}
-         onBlur={formik.handleBlur}
-         value={formik.values.title}
-       />
-       {formik.touched.title && formik.errors.title ? (
-         <div>{formik.errors.title}</div>
-       ) : null}
- <br /> <br />
-       <input className={Style.fromInput}
-         id="description"
-         name="description"
-         type="text"
-         placeholder='Description'
-         onChange={formik.handleChange}
-         onBlur={formik.handleBlur}
-         value={formik.values.description}
-       />
-       {formik.touched.description && formik.errors.description ? (
-         <div>{formik.errors.description}</div>
-       ) : null}
-  <br />
-  <br />
-       <button className={Style.button} type="submit"><b>Submit</b></button>
-     </form>
+  <br/>
+
 
     </>
   )

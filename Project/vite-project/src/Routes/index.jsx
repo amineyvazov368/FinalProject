@@ -12,9 +12,9 @@ import Home from "../pages/Client/Home";
 import Login from "../pages/Client/Login";
 import Pricing from "../pages/Client/Pricing";
 import Register from "../pages/Client/Register";
-import Team from "../pages/Client/Team"
-
-
+import Team from "../pages/Client/Team";
+import User from '../pages/Client/User';
+import TeamCreate from "../pages/Admin/AdminTeam/TeamCreate.jsx";
 
 export const ROUTES = [
     //admin root
@@ -34,6 +34,10 @@ export const ROUTES = [
             {
                 path:"AdminTeam",
                 element:<AdminTeam/>
+            },
+            {
+                path:"adminTeam/create",
+                element:<TeamCreate/>
             },
             {
                 path:"AdminLogin",
@@ -82,6 +86,10 @@ export const ROUTES = [
         {
             path:"pricing",
             element:<Pricing/>
+        },
+        {
+            path:"user",
+            element:<User/>
         }
 
     ]

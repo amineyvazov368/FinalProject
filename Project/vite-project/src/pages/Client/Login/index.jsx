@@ -76,8 +76,8 @@ const index = () => {
         <Container>
           <Row>
             <Col lg={3}>
-              <h4>Home <b><GoChevronRight /></b> Register <b><GoChevronRight /></b> </h4>
-              <h1>Register</h1>
+              <h4>Home <b><GoChevronRight /></b> Login <b><GoChevronRight /></b> </h4>
+              <h1>Login</h1>
             </Col>
 
           </Row>
@@ -117,7 +117,7 @@ const index = () => {
                 />
                 {formik.touched.password && formik.errors.password ? (
                   <div>{formik.errors.password}</div>
-                ) : null}
+                ) : null} <br /> <br />
                 <button className={Style.buttonn} type="submit"><b>Submit</b></button>
               </form>
             </Col>
