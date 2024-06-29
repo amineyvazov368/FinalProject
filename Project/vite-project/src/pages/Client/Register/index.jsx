@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import { Link } from "react-router-dom";
 import { GoChevronRight } from "react-icons/go";
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast'
@@ -154,7 +155,7 @@ const index = () => {
                 ) : null}
                 <br />
                 <br />
-
+                <Link to={"/login"}>already have an account?</Link> <br /> <br />
                 <button className={Style.buttonn} type="submit"><b>Submit</b></button>
               </form>
             </Col>

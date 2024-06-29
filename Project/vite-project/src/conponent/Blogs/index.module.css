@@ -1,0 +1,31 @@
+.blogs{
+    padding: 30px 0px;
+    margin-top: 40px;
+}
+
+
+.blogImg img{
+    width: 100%;
+    height: 100%;
+}
+.blogImg{
+    height: 300px;
+    position: relative;
+}
+.info{
+  padding: 20px;  
+  height: 200px;
+  background-color: rgb(235, 233, 233);
+}
+.time{
+    position: absolute;
+    border: 1px solid ;
+    text-align: center;
+    border-radius: 10px;
+    padding: 11px 40px;
+    background-color: white;
+    margin-top: -44px;
+}
+.blogText p{
+color: rgb(131, 82, 17);
+}

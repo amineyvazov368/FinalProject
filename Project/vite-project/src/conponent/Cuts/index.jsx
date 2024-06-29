@@ -13,7 +13,7 @@ const index = () => {
     {cuts && cuts.cuts.map((cut)=>{
 
       return(
-        <Col lg={3}>
+        <Col lg={3} md={6} sm={12}>
          <div className={Style.card}>
           <div className={Style.cardImg}>
             <img src={cut.src} alt="" />

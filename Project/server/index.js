@@ -14,5 +14,6 @@ app.use(router.blog);
 app.use('/api/users',router.user);
 app.use(router.cuts);
 app.use(router.teams);
-app.use(router.prices)
+app.use(router.prices);
+app.use(router.says)
 

@@ -8,6 +8,8 @@ import { FaSearch } from "react-icons/fa";
 import Cuts from "../../../conponent/Cuts"
 import Prices from "../../../conponent/Prices"
 import Slider from "../../../conponent/Slider"
+import Says from "../../../conponent/Says"
+import Blogs from "../../../conponent/Blogs"
 const index = () => {
   return (
     <>
@@ -45,7 +47,7 @@ const index = () => {
               <h5>ABOUT BARBER</h5>
               <h1>A SMOOTH BARBER EXPERIENCE IN YOUR TOWN</h1> <br />
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> <br />
-              <button>year sdkbdshkdsh dfjbdf</button>
+              
             </Col>
           </Row>
         </Container>
@@ -125,6 +127,18 @@ const index = () => {
           <Prices></Prices>
         </Container>
       </section>
+      <section className={Style.said}>
+        <Container>
+        <Row>
+            <Col className={Style.saidTitle} lg={5}>
+            <h5>TESTIMONIAL</h5>
+            <h1>PEOPLE SAY <br />ABOUT OUR BARBER</h1>
+            </Col>
+          </Row>
+
+          <Says/>
+        </Container>
+      </section>
       <section className={Style.appointment}>
         <Container>
           <h2>MAKE AN APPOINTMENT</h2>
@@ -137,6 +151,19 @@ const index = () => {
           </form>
         </Container>
       </section>
+      <section className={Style.post}>
+        <Container>
+        <Row>
+            <Col className={Style.postTitle} lg={5}>
+            <h5>OUR BLOG</h5>
+            <h1>RECENT POST</h1>
+            </Col>
+          </Row>
+        <Blogs/>
+         
+        </Container>
+      </section>
+
     </>
   )
 }

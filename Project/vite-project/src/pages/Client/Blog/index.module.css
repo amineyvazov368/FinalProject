@@ -1,0 +1,86 @@
+.intro{
+    color: aliceblue;
+    padding-bottom: 50px;
+    padding-top: 450px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://preview.colorlib.com/theme/barbero/images/bg_1.jpg);
+}
+.intro h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.blogs{
+    padding: 30px 0px;
+    margin-top: 40px;
+}
+.allBlogs{
+    margin-top: 100px !important;
+}
+
+
+.blogImg img{
+    width: 100%;
+    height: 100%;
+}
+.blogImg{
+    height: 300px;
+    position: relative;
+}
+.info{
+  padding: 20px;  
+  height: 200px;
+  background-color: rgb(235, 233, 233);
+}
+.time{
+    position: absolute;
+    border: 1px solid ;
+    text-align: center;
+    border-radius: 10px;
+    padding: 11px 40px;
+    background-color: white;
+    margin-top: -44px;
+}
+.blogText p{
+color: rgb(131, 82, 17);
+}
+.big{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.small{
+    row-gap: 20px;
+}
+.add{
+    margin: 20px auto;
+    margin-right: -40px;
+    border: 2px solid burlywood;
+    width: 100%;
+  background-color:rgb(149, 149, 223);
+}
+.singup{
+    width:92% ;
+    margin-left: 20px;
+    border: 1px solid burlywood;
+}
+.buttonn{
+    padding: 7px 27px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.parag{
+    width: 80%;
+    margin: auto;
+   padding-top: 25px;
+   padding-right: 45px;
+}
+.add h4{
+    text-align: center;
+    margin-top: 10px;
+}
+.parag h5{
+   color: rgb(158, 107, 39);
+}
+.parag p{
+    color: rgb(116, 67, 4);
+}

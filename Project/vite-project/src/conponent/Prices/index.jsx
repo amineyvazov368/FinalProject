@@ -14,7 +14,7 @@ const index = () => {
         <Row className={Style.boxs}>
             {prices && prices.prices.map((price)=>{
                 return(
-                    <Col lg={4}>
+                    <Col lg={4} md={6} sm={12}>
                         <div className={Style.box}>
                             <div className={Style.boxImg}>
                                 <img src={price.src} alt="" />

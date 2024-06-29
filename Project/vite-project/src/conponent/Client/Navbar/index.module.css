@@ -1,6 +1,8 @@
 .nav{
     background-color: rgba(48, 46, 46, 0.925);
-
+    z-index: 999;
+    position: fixed;
+    width: 100%;
 }
 
 
@@ -11,11 +13,15 @@
     justify-content: space-between;
     color: aliceblue;
 }
-.button link {
+.button Link {
     text-decoration: none;
     list-style: none;
-    color: aliceblue;
+    color: aliceblue !important;
     font-size: medium;
+}
+.link{
+    color: aliceblue;
+    text-decoration: none;
 }
 .logo{
     margin-top: 4px;

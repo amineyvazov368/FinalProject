@@ -242,7 +242,23 @@
     font-weight: 700;
     font-size: 47px;
 }
-
+.said{
+    padding-top: 35px;
+    padding-bottom: 55px;
+    background-color: rgb(12, 10, 10);
+}
+.saidTitle{
+    margin:10px auto;
+    text-align: center;
+}
+.saidTitle h5{
+    color: rgb(236, 180, 107);
+}
+.saidTitle h1{
+    font-weight: 700;
+    font-size: 40px;
+    color: aliceblue;
+}
 .appointment {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -272,4 +288,21 @@ input {
     padding: 10px 5px;
     border-radius: 7px;
     margin-left: 5px;
+}
+.post{
+    padding-top: 35px;
+    padding-bottom: 55px;
+ 
+}
+.postTitle{
+    margin:10px auto;
+    text-align: center;
+}
+.postTitle h5{
+    color: rgb(236, 180, 107);
+}
+.postTitle h1{
+    font-weight: 700;
+    font-size: 40px;
+
 }
