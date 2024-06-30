@@ -52,6 +52,7 @@ const Header = () => {
         <Link onClick={() => changeColor('team')} className={selectClass === 'team' ? 'active' : ''} to={"/admin/adminTeam"}>Teams</Link>
         <Link onClick={() => changeColor('blog')}  className={selectClass === 'blog' ? 'active' : ''} to={"/admin/adminBlog"}>Blogs</Link>
         <Link onClick={() => changeColor('user')}  className={selectClass === 'user' ? 'active' : ''} to={"/admin/users"}>Users</Link>
+        <Link onClick={() => changeColor('message')}  className={selectClass === 'message' ? 'active' : ''} to={"/admin/message"}>Message</Link>
     </div>
   
     </header>

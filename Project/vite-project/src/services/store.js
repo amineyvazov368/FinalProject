@@ -6,6 +6,7 @@ import { PricesAPI } from './PricesQuerySlice'
 import {BlogsAPI} from './BlogsQuerySlice'
 import { SaysAPI } from './SaysQuerySlice'
 import { UsersAPI } from './UsersQuerySlice'
+import {MessageAPI} from './MessageQuerySlice'
 
 export const store = configureStore({
   reducer: {
@@ -14,7 +15,8 @@ export const store = configureStore({
     [PricesAPI.reducerPath]: PricesAPI.reducer,
     [BlogsAPI.reducerPath]: BlogsAPI.reducer,
     [SaysAPI.reducerPath]: SaysAPI.reducer,
-    [UsersAPI.reducerPath]: UsersAPI.reducer
+    [UsersAPI.reducerPath]: UsersAPI.reducer,
+    [MessageAPI.reducerPath]:MessageAPI.reducer
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(
@@ -23,7 +25,8 @@ export const store = configureStore({
       PricesAPI.middleware,
       BlogsAPI.middleware,
       SaysAPI.middleware,
-      UsersAPI.middleware
+      UsersAPI.middleware,
+      MessageAPI.middleware
       ),
    
 })

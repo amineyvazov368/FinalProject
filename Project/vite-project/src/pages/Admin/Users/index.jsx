@@ -32,7 +32,7 @@ const index = () => {
     rows.push({
       id: i, username: x.username, email: x.email,
       src: x.src,
-      role: x.role, buttons: { update: `/admin/adminTeam/update/${x._id}`, delete: `/admin/adminTeam/delete/${x._id}` }
+      role: x.role, 
     })
   })
   const { data: users, error, isLoading, refetch, } = useGetUsersQuery()

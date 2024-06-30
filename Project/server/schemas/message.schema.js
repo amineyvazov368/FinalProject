@@ -1,10 +1,13 @@
 const mongoose = require("mongoose");
 
-const CutsSchema= new mongoose.Schema({
-    title:String,
-    description:String,
-    src:String,
+const MessageSchema= new mongoose.Schema({
+    name:String,
+    phone:String,
+    time:String,
+    barber:String
+        
+    
    
 })
 
-module.exports = CutsSchema;
+module.exports = MessageSchema;

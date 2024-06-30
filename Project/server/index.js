@@ -16,4 +16,5 @@ app.use(router.cuts);
 app.use(router.teams);
 app.use(router.prices);
 app.use(router.says)
+app.use(router.message)
 

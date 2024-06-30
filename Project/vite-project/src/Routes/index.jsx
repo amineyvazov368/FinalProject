@@ -3,7 +3,6 @@ import ClientRoot from "../pages/Client/ClientRoot";
 import AdminBlog from "../pages/Admin/AdminBlog";
 import AdminLogin from "../pages/Admin/AdminLogin";
 import AdminTeam from '../pages/Admin/AdminTeam';
-import Dashboard from "../pages/Admin/Dashboard";
 import About from "../pages/Client/About";
 import Blog from "../pages/Client/Blog";
 import Contact from "../pages/Client/Contact";
@@ -17,6 +16,7 @@ import User from '../pages/Client/User';
 import TeamCreate from "../pages/Admin/AdminTeam/TeamCreate.jsx";
 import BlogCreate from "../pages/Admin/AdminBlog/BlogCreate";
 import Users from "../pages/Admin/Users"
+import Message from "../pages/Admin/Message"
 
 export const ROUTES = [
     //admin root
@@ -25,10 +25,7 @@ export const ROUTES = [
         path:"/admin",
         element:<AdminRoot/>,
         children:[
-            {
-                index:true,
-                element:<Dashboard/>
-            },
+          
             {
                 path:"AdminBlog",
                 element:<AdminBlog/>
@@ -38,7 +35,7 @@ export const ROUTES = [
                 element:<BlogCreate/>
             },
             {
-                path:"AdminTeam",
+                path:"adminTeam",
                 element:<AdminTeam/>
             },
             {
@@ -52,6 +49,10 @@ export const ROUTES = [
             {
                 path:"AdminLogin",
                 element:<AdminLogin/>
+            },
+            {
+                path:"message",
+                element:<Message/>
             }
         ]
 },

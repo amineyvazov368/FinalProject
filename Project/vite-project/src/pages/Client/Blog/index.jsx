@@ -9,6 +9,7 @@ import { IoMdPerson } from "react-icons/io";
 import { AiFillMessage } from "react-icons/ai";
 import Style from "./index.module.css"
 import { FaSearch } from "react-icons/fa";
+import axios from 'axios';
 import { GoChevronRight } from "react-icons/go";
 import { useDeleteBlogsMutation, useGetBlogsQuery } from '../../../services/BlogsQuerySlice';
 const index = () => {
@@ -28,7 +29,15 @@ const index = () => {
       src: Yup.string().required('Required'),
     }),
     onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+      console.log("salam");
+        try {
+
+          const response = axios.post("http://localhost:5050/api/says", values);
+          history(-1)
+        }
+        catch (e) {
+          console.log(e.message)
+        }
     },
   });
   const { data: blogs, error, isLoading, refetch, } = useGetBlogsQuery()
