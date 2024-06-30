@@ -91,7 +91,7 @@ const index = () => {
 
 
               <form className={Style.sing} onSubmit={formik.handleSubmit}>
-                <h1>Sing up</h1>
+                <h1>Sign up</h1>
 
                 <br /> <br />
                 <input className={Style.singup}

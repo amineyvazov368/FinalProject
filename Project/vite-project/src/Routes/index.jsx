@@ -15,6 +15,8 @@ import Register from "../pages/Client/Register";
 import Team from "../pages/Client/Team";
 import User from '../pages/Client/User';
 import TeamCreate from "../pages/Admin/AdminTeam/TeamCreate.jsx";
+import BlogCreate from "../pages/Admin/AdminBlog/BlogCreate";
+import Users from "../pages/Admin/Users"
 
 export const ROUTES = [
     //admin root
@@ -32,12 +34,20 @@ export const ROUTES = [
                 element:<AdminBlog/>
             },
             {
+                path:"adminBlog/create",
+                element:<BlogCreate/>
+            },
+            {
                 path:"AdminTeam",
                 element:<AdminTeam/>
             },
             {
                 path:"adminTeam/create",
                 element:<TeamCreate/>
+            },
+            {
+                path:"users",
+                element:<Users/>
             },
             {
                 path:"AdminLogin",

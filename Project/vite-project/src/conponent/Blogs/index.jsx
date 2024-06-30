@@ -2,6 +2,9 @@ import React from 'react'
 import Row from 'react-bootstrap/Row';
 import { useSelector, useDispatch } from 'react-redux'
 import Col from 'react-bootstrap/Col';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Style from './index.module.css'
 import { Container } from '@mui/material';
 import { FaCalendarAlt } from "react-icons/fa";
@@ -11,9 +14,17 @@ import { useDeleteBlogsMutation, useGetBlogsQuery } from '../../services/BlogsQu
 const index = () => {
     const { data: blogs, error, isLoading, refetch, } =useGetBlogsQuery()
     const [deleteOne, { isError, isSuccess }] = useDeleteBlogsMutation();
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      };
   return (
    <>
-   <Row className={Style.blogs}>
+    <Slider {...settings} className={Style.blogs}>
+   
     { blogs && blogs.blogs.map((blog)=>{
         return(
             <Col  lg={4} md={6} sm={12} className={Style.blog}>
@@ -31,7 +42,8 @@ const index = () => {
             </Col>
         )
     })}
-   </Row>
+  
+   </Slider>
    
    </>
   )

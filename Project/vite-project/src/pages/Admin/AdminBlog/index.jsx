@@ -1,76 +1,61 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Style from "./index.module.css"
 import AdminPanelTable from '../../../conponent/Admin/common/AdminPanelTable';
-
+import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { useDeleteBlogsMutation, useGetBlogsQuery } from '../../../services/BlogsQuerySlice';
 const index = () => {
-  const formik = useFormik({
-    initialValues: {
-      src: '',
-      title: '',
-      description: '',
-    },
-    validationSchema: Yup.object({
-      src: Yup.string()
-        .required('Required'),
-        title: Yup.string()
-        .max(20, 'Must be 20 characters or less')
-        .required('Required'),
-        description: Yup.string().required('Required'),
-    }),
-    onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
-    },
-  });
+ 
+  const [blogss, setBlogss]=useState([])
+
+  useEffect(()=>{
+      
+    axios.get("http://localhost:5050/api/blogs").then(res=>{
+      console.log(res)
+      setBlogss(res.data.blogs)
+     //  setTeams(res.data)
+     }).catch(e=>{
+       console.log(e)
+     })
+  },[])
+
+  let rows=[]
+  const columns1=[
+     { id: "id", label: "Id", minWidth: 20,maxWidth:200 },
+     { id: "title", label: "Title", minWidth: 20,maxWidth:200 },
+     { id: "info", label: "Info", minWidth: 20,maxWidth:200 },
+     { id: "buttons", label: "Actions", minWidth: 20,maxWidth:200 },
+   ]
+
+   console.log(blogss)
+   blogss.map((x,i)=>{
+     rows.push({id:i,title:x.title,info:x.info,buttons:{update:`/admin/adminBlog/update/${x._id}`,delete:`/admin/adminBlog/delete/${x._id}`}})
+   })
+
+   const { data: blogs, error, isLoading, refetch, } = useGetBlogsQuery();
+   const [deleteOne, { isError, isSuccess }] = useDeleteBlogsMutation();
+
+
   return (
    <>
-   <h1>Add Teams</h1>
+  <h1>Blogs</h1> <br />
 
-<form className={Style.form} onSubmit={formik.handleSubmit}>
-  <input className={Style.fromInput}
-    id="src"
-    name="src"
-    type="url"
-    placeholder='Src'
-    onChange={formik.handleChange}
-    onBlur={formik.handleBlur}
-    value={formik.values.src}
-  />
-  {formik.touched.src && formik.errors.src ? (
-    <div>{formik.errors.src}</div>
-  ) : null}
-<br /> <br />
-  <input className={Style.fromInput}
-    id="title"
-    name="title"
-    type="text"
-    placeholder='Title'
-    onChange={formik.handleChange}
-    onBlur={formik.handleBlur}
-    value={formik.values.title}
-  />
-  {formik.touched.title && formik.errors.title ? (
-    <div>{formik.errors.title}</div>
-  ) : null}
-<br /> <br />
-  <input className={Style.fromInput}
-    id="description"
-    name="description"
-    type="text"
-    placeholder='Description'
-    onChange={formik.handleChange}
-    onBlur={formik.handleBlur}
-    value={formik.values.description}
-  />
-  {formik.touched.description && formik.errors.description ? (
-    <div>{formik.errors.description}</div>
-  ) : null}
-<br />
-<br />
-  <button className={Style.button} type="submit"><b>Submit</b></button>
-</form>
-   
+  <div className='Brands adminList'>
+    <div className="listInfo">
+    <h2>Blog</h2>
+    <div className="add">
+        <Link className='btn btn-success' to={"create"}>Create</Link>
+    </div>
+    </div>
+    <ul className='list'>
+        <AdminPanelTable Rows={rows} Columns={columns1} />
+    </ul>
+ 
+</div>
+
+  <br/>
    </>
   )
 }

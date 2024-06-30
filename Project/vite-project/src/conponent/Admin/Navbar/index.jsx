@@ -14,7 +14,7 @@ const index = () => {
                     </div>
                     <div className={Style.button}>
                        
-                        <Button><Link className={Style.link} to={"/admin/"}>Dashboard</Link></Button>
+                        
                         <Button><Link className={Style.link} to={"/admin/AdminLogin"}>AdminLogin</Link></Button>
                         <Button><Link className={Style.link} to={"/admin/AdminTeam"}>AdminTeam</Link></Button>
                         <Button><Link className={Style.link} to={"/admin/AdminBlog"}>AdminBlog</Link></Button>

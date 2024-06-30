@@ -24,3 +24,11 @@
     margin: 10px;
     
 }
+
+.adminHeaderBottom link{
+   color: black; 
+}
+Link{
+    color: black;
+    list-style: none;
+}

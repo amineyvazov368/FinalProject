@@ -6,9 +6,9 @@ import Style from './index.module.css'
 import { Container } from '@mui/material';
 import { useGetPricesQuery, useDeletePricesMutation} from '../../services/PricesQuerySlice'
 const index = () => {
-    const { data: prices, error, isLoading, refetch, } = useGetPricesQuery()
+   const { data: prices, error, isLoading, refetch, } = useGetPricesQuery()
     const [deleteOne, { isError, isSuccess }] = useDeletePricesMutation();
-  return (
+  return ( 
     <>
     <Container>
         <Row className={Style.boxs}>
