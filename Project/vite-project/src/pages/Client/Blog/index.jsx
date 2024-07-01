@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useFormik } from 'formik';
+import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 import { FaCalendarAlt } from "react-icons/fa";
 import { IoMdPerson } from "react-icons/io";
@@ -13,6 +14,7 @@ import axios from 'axios';
 import { GoChevronRight } from "react-icons/go";
 import { useDeleteBlogsMutation, useGetBlogsQuery } from '../../../services/BlogsQuerySlice';
 const index = () => {
+  const history = useNavigate();
   const formik = useFormik({
     initialValues: {
       name: '',

@@ -65,7 +65,7 @@ const index = () => {
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
       </style>
-      <section className={Style.intro}>
+      {/* <section className={Style.intro}>
         <Container>
           <Row>
             <Col lg={3}>
@@ -75,7 +75,7 @@ const index = () => {
 
           </Row>
         </Container>
-      </section>
+      </section> */}
       <section className={Style.register}>
         <Container>
           <Row>
@@ -83,7 +83,7 @@ const index = () => {
 
 
               <form className={Style.sing} onSubmit={formik.handleSubmit}>
-                <h1>Sing up</h1>
+                <h1>Register</h1>
                 <input className={Style.singup}
                   id="username"
                   name="username"

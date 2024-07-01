@@ -157,7 +157,7 @@ const user_controller = {
 
 const generateToken = async ({ id, username, email, role, src, favorites }) => {
     return jwt.sign({ id, username, email, role, src, favorites }, 'amin', {
-        expiresIn: '2h'
+        expiresIn: '10h'
     })
 }
 module.exports = user_controller;

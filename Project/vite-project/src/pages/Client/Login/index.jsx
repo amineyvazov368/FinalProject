@@ -73,17 +73,7 @@ const index = () => {
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
       </style>
-      <section className={Style.intro}>
-        <Container>
-          <Row>
-            <Col lg={3}>
-              <h4>Home <b><GoChevronRight /></b> Login <b><GoChevronRight /></b> </h4>
-              <h1>Login</h1>
-            </Col>
-
-          </Row>
-        </Container>
-      </section>
+     
       <section className={Style.register}>
         <Container>
           <Row>

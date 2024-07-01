@@ -21,3 +21,14 @@ h1{
     align-items: center;
     margin-right: -100px;
 }
+.imgg{
+    width: 30%;
+    height: 300px;
+}
+.picture{
+    width: 100%;
+    height: 100%;
+}
+.pa{
+    color: red;
+}

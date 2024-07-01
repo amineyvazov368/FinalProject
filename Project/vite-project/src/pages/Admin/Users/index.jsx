@@ -2,15 +2,17 @@ import React, { useEffect, useState } from 'react'
 import { useDeleteUsersMutation, useGetUsersQuery } from '../../../services/UsersQuerySlice';
 import AdminPanelTable from '../../../conponent/Admin/common/AdminPanelTable';
 import { Link } from 'react-router-dom';
+
 import axios from 'axios';
 const index = () => {
   const [userss, setUserss] = useState([])
 
+
   useEffect(() => {
 
     axios.get("http://localhost:5050/api/users").then(res => {
-      console.log(res)
-      setUserss(res.data.users)
+      console.log(res.data.data)
+      setUserss(res.data)
       //  setTeams(res.data)
     }).catch(e => {
       console.log(e)
@@ -27,7 +29,6 @@ const index = () => {
     { id: "buttons", label: "Actions", minWidth: 20, maxWidth: 200 },
   ]
 
-  console.log(userss)
   userss.map((x, i) => {
     rows.push({
       id: i, username: x.username, email: x.email,
@@ -35,8 +36,7 @@ const index = () => {
       role: x.role, 
     })
   })
-  const { data: users, error, isLoading, refetch, } = useGetUsersQuery()
-  const [deleteOne, { isError, isSuccess }] = useDeleteUsersMutation();
+
   return (
     <>
       <div className='Brands adminList'>

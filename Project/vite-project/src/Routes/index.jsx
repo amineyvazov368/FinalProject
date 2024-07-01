@@ -17,93 +17,103 @@ import TeamCreate from "../pages/Admin/AdminTeam/TeamCreate.jsx";
 import BlogCreate from "../pages/Admin/AdminBlog/BlogCreate";
 import Users from "../pages/Admin/Users"
 import Message from "../pages/Admin/Message"
+import BlogDelete from "../pages/Admin/AdminBlog/BlogDelete";
+import TeamDelete from "../pages/Admin/AdminTeam/TeamDelete";
 
 export const ROUTES = [
     //admin root
 
     {
-        path:"/admin",
-        element:<AdminRoot/>,
-        children:[
-          
+        path: "/admin",
+        element: <AdminRoot />,
+        children: [
+
             {
-                path:"AdminBlog",
-                element:<AdminBlog/>
+                path: "AdminBlog",
+                element: <AdminBlog />
             },
             {
-                path:"adminBlog/create",
-                element:<BlogCreate/>
+                path: "adminBlog/create",
+                element: <BlogCreate />
             },
             {
-                path:"adminTeam",
-                element:<AdminTeam/>
+                path: "adminBlog/delete/:id",
+                element: <BlogDelete />
             },
             {
-                path:"adminTeam/create",
-                element:<TeamCreate/>
+                path: "adminTeam",
+                element: <AdminTeam />
             },
             {
-                path:"users",
-                element:<Users/>
+                path: "adminTeam/create",
+                element: <TeamCreate />
             },
             {
-                path:"AdminLogin",
-                element:<AdminLogin/>
+                path: "adminTeam/delete/:id",
+                element: <TeamDelete/>
             },
             {
-                path:"message",
-                element:<Message/>
+                path: "users",
+                element: <Users />
+            },
+            {
+                path: "AdminLogin",
+                element: <AdminLogin />
+            },
+            {
+                path: "message",
+                element: <Message />
             }
         ]
-},
+    },
 
-//client root
-{
-    path:"/",
-    element:<ClientRoot/>,
-    children:[
-        {
-            index:true,
-            element:<Home/>
-        },
-        {
-            path:"about",
-            element:<About/>
-        },
-        {
-            path:"blog",
-            element:<Blog/>
-        },
-        {
-            path:"contact",
-            element:<Contact/>
-        },
-        {
-            path:"gallery",
-            element:<Gallery/>
-        },
-        {
-            path:"login",
-            element:<Login/>
-        },
-        {
-            path:"register",
-            element:<Register/>
-        },
-        {
-            path:"team",
-            element:<Team/>
-        },
-        {
-            path:"pricing",
-            element:<Pricing/>
-        },
-        {
-            path:"user",
-            element:<User/>
-        }
+    //client root
+    {
+        path: "/",
+        element: <ClientRoot />,
+        children: [
+            {
+                index: true,
+                element: <Home />
+            },
+            {
+                path: "about",
+                element: <About />
+            },
+            {
+                path: "blog",
+                element: <Blog />
+            },
+            {
+                path: "contact",
+                element: <Contact />
+            },
+            {
+                path: "gallery",
+                element: <Gallery />
+            },
+            {
+                path: "login",
+                element: <Login />
+            },
+            {
+                path: "register",
+                element: <Register />
+            },
+            {
+                path: "team",
+                element: <Team />
+            },
+            {
+                path: "pricing",
+                element: <Pricing />
+            },
+            {
+                path: "user",
+                element: <User />
+            }
 
-    ]
-}
+        ]
+    }
 
 ]

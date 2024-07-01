@@ -40,19 +40,14 @@ const index = () => {
 
 
   return (
- <>
- <div className='Brands adminList'>
-    <div className="listInfo">
-    <h2>Blog</h2>
-    <div className="add">
-        <Link className='btn btn-success' to={"create"}>Create</Link>
-    </div>
-    </div>
+ <> <br />
+ <h1>Appointment</h1>
+ <br />
     <ul className='list'>
         <AdminPanelTable Rows={rows} Columns={columns1} />
     </ul>
  
-</div>
+
 
   <br/>
  

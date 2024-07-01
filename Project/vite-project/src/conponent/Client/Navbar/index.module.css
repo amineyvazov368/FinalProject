@@ -1,4 +1,4 @@
-.nav{
+/* .nav{
     background-color: rgba(48, 46, 46, 0.925);
     z-index: 999;
     position: fixed;
@@ -29,4 +29,50 @@
 .button{
     margin: 10px;
     
-}
+} */
+
+.nav {
+    background-color: #333; /* Example background color */
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .logo h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .button {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .button Button {
+      width: 100%;
+      text-align: left;}
+    }

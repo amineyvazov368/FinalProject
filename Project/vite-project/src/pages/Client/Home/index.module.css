@@ -6,6 +6,23 @@
   
     background-image: url(https://preview.colorlib.com/theme/barbero/images/bg_2.jpg);
 }
+@media (max-width: 768px) {
+    .intro {
+      padding: 20px;
+    }
+  
+    .info h1 {
+      font-size: 24px;
+    }
+  
+    .introParag p {
+      font-size: 16px;
+    }
+  
+    .introParag button {
+      width: 100%;
+    }
+  }
 
 .info {
     color: aliceblue;

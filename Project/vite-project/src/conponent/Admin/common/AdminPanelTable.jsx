@@ -64,12 +64,7 @@ const AdminPanelTable = ({ Rows, Columns }) => {
 
                                   {value.detail ? <Link className='btn btn-primary' to={value.detail}>Detail</Link> : ""}
                                   {value.update ? <Link className='btn btn-warning' to={value.update}>Update</Link> : ""}
-                                  {value.delete ? <button onClick={async () => {
-                                    if (window.confirm("delete?")) {
-                                      await deleteOne(blogs._id);
-                                      refetch()
-                                    }
-                                  }}><Link className='btn btn-danger' to={value.delete}>Delete</Link></button> : ""}
+                                  {value.delete ? <Link className='btn btn-danger' to={value.delete}>Delete</Link> : ""}
                                 </div>
                               )
                                 : value)

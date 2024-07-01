@@ -40,3 +40,43 @@
 .star{
     color: yellow;
 }
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .aboutTitle {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .one {
+    flex: unset;
+  }
+}
+
+@media (max-width: 576px) {
+  .col {
+    padding: 10px;
+  }
+
+  .aboutInfo {
+    padding: 15px;
+  }
+
+  .image {
+    width: 60px;
+    height: 60px;
+  }
+}
