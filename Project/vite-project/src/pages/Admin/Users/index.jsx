@@ -1,18 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useDeleteUsersMutation, useGetUsersQuery } from '../../../services/UsersQuerySlice';
 import AdminPanelTable from '../../../conponent/Admin/common/AdminPanelTable';
 import { Link } from 'react-router-dom';
 
 import axios from 'axios';
+import { dataContext } from '../../../context/context';
 const index = () => {
-  const [userss, setUserss] = useState([])
+    const [users, setUsers] = useContext(dataContext)
+   
 
 
   useEffect(() => {
 
     axios.get("http://localhost:5050/api/users").then(res => {
-      console.log(res.data.data)
-      setUserss(res.data)
+      console.log(res.data)
+      setUsers(res.data.data)
       //  setTeams(res.data)
     }).catch(e => {
       console.log(e)
@@ -29,7 +31,7 @@ const index = () => {
     { id: "buttons", label: "Actions", minWidth: 20, maxWidth: 200 },
   ]
 
-  userss.map((x, i) => {
+  users.map((x, i) => {
     rows.push({
       id: i, username: x.username, email: x.email,
       src: x.src,

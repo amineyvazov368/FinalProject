@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Style from "./index.module.css"
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
+import { dataContext } from '../../../context/context';
 const index = () => {
+    const { userToken, setUserToken }=useContext(dataContext)
     return (
         <>
             <div className={Style.nav}>
@@ -22,6 +24,10 @@ const index = () => {
                         <Button><Link className={Style.link} to={"/pricing"}>Pricing</Link></Button>
                         <Button><Link className={Style.link} to={"/team"}>Team</Link></Button>
                         <Button><Link className={Style.link} to={"/user"}>User</Link></Button>
+                        <Button onClick={()=>{
+                            localStorage.removeItem('token')
+                            setUserToken(null)}
+                        }><Link className={Style.link} to={"/register"}>Log out</Link></Button>
                       
                     </div>
                 </div>
